@@ -1,10 +1,10 @@
 #!/bin/bash
 
-TEST=$1
+DIR=$1
 
-if [ -z $TEST ]
+if [ -z $DIR ]
 then
-    TEST="."
+    DIR="."
 fi
 
-rm -rf $TEST/{*.ko,*.mod,*.mod.c,*.o,*.order,*.symvers}
+rm -rf $DIR/{*.ko,*.mod,*.mod.c,*.o,*.order,*.symvers}
